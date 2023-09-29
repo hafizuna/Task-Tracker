@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
+
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: Oswald, Roboto, sans-serif;
+  letter-spacing: 3px;
+}
+
+.header{
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a i{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.container{
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.in-progress{
+  height: 700px; 
+  border-radius: 30px;
+  box-shadow: 10px 23px 34px rgba(0, 0, 0, 0.3);
+  padding: 50px 50px 160px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252B48;
+  color: white;
+  font-weight: 600;
+}
+
+.in-progress .pending-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  overflow-x: hidden;
+}
+
+.middle .todo-container{
+  height: 250px;
+  border-radius: 30px;
+  box-shadow: 10px 23px 34px rgba(0, 0, 0, 0.3);
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+.middle .todo-container .todo-inner-container{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.todo-inner-container input{
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 30px;
+  font-family: Oswlad;
+  border: 2px solid black;
+}
+
+.todo-inner-container button{
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: Oswlad;
+  font-weight: 800;
+  border:none;
+  color: white;
+  background-color: #252B48;
+  box-shadow: 10px 23px 34px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.middle .new-todos{
+  height: 600px;
+  border-radius: 30px;
+  box-shadow: 10px 23px 34px rgba(0, 0, 0, 0.3);
+  padding: 50px 50px 160px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.new-todos .todos{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  overflow-x: hidden;
+}
+
+.single-todo{
+  display: flex; 
+  align-items: center;
+  padding: 22px;
+  background-color: rgba(72, 240, 212, 0.3);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+ p{
+  margin-right: 80px;
+  margin-left: 20px;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+i{
+  cursor: pointer;
+  width: 50px;
+  font-size: 20px;;
+}
+
+
+.todo-history{
+  height: 700px;
+  border-radius: 30px;
+  box-shadow: 10px 23px 34px rgba(0, 0, 0, 0.3);
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252B48;
+  color: white;
+  font-weight: 600;
+}
+
+.todo-history .history{
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 799px) {
+  .in-progress{
+    padding: 50px;
+  }
+
+  .todo-container{
+    padding: 50px;
+  }
+
+  .new-todos{
+    padding: 50px;
+  }
+
+  .todo-history{
+    padding: 50px;
+  }
+}
